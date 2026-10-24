@@ -1,0 +1,48 @@
+HOW TO USE: reverse-image-prompt
+====================================
+
+PURPOSE
+  Analyzes user-provided images or artworks and generates exhaustive, reconstruction-grade
+  prompts engineered to reproduce the visual composition, medium, lighting, color palette,
+  and micro-details across state-of-the-art AI image generators (Midjourney, Flux, SDXL, DALL-E).
+
+CAPABILITIES
+  - Multi-dimensional forensic visual analysis (medium, style, composition, lighting, palette, texture).
+  - Dual-output format: dense macro-to-micro prompt block followed by granular dimension breakdown.
+  - Model tag optimization tailored for diffusion and transformer image generation models.
+  - Confidence auditing across visual elements to ensure accurate prompt weighting.
+  - Extracts subject details, camera optics, depth of field, art medium, and render engine markers.
+
+USE CASES
+  - Recreating the exact visual aesthetic of a reference photograph or artwork.
+  - Learning prompt engineering patterns by deconstructing successful visual outputs.
+  - Generating variations or style-consistent image sets based on an initial visual asset.
+  - Documenting visual asset aesthetics for brand guides and design systems.
+
+IDEAS
+  - Pair with canvas-design or design-templates to generate matching thematic visual assets.
+  - Deconstruct high-end 3D renders into Octane/Redshift rendering prompt cues.
+  - Create prompt libraries from curated mood boards and film stills.
+
+PROMPTS YOU CAN PASTE
+  /reverse-image-prompt
+
+  Reconstruct the prompt for this uploaded image.
+
+  Give me an exhaustive reverse prompt for this photo so I can recreate it in Midjourney.
+
+  What prompt would generate this exact visual style, lighting, and camera angle?
+
+  Deconstruct this artwork into a reconstruction prompt and full breakdown.
+
+EXAMPLE FLOW
+  You:   /reverse-image-prompt [Uploads or describes image]
+  Model: Conducts systematic dimension scan, rates visual confidence, then outputs:
+         - ## Reconstruction Prompt (200-500 words dense, comma-separated)
+         - ## Prompt Breakdown (Medium, Subject, Lighting, Palette, Texture, Optics, Tags)
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Scan image across all visual dimensions (macro to micro)
+  2. Generate single continuous comma-separated reconstruction prompt
+  3. Provide structured dimensional breakdown table
+  4. Include model-specific rendering tags (lighting, optics, engine)
